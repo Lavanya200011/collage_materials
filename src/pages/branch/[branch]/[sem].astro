@@ -1,0 +1,54 @@
+---
+export const prerender = false;
+import Layout from '../../../layouts/Layout.astro';
+import { supabase } from '../../../lib/supabase';
+
+const { branch, sem } = Astro.params;
+const semNumber = sem?.replace('sem-', '');
+
+// 🧪 THE HEARTBEAT TEST
+// Let's try to get EVERYTHING from the table first to see if it's working
+const { data: resources, error } = await supabase
+  .from('resources')
+  .select('*'); 
+
+console.log("--- DEBUG START ---");
+console.log("URL:", import.meta.env.PUBLIC_SUPABASE_URL); // Check if keys are loading
+console.log("Error from Supabase:", error);
+console.log("All Data Found:", resources);
+console.log("--- DEBUG END ---");
+---
+
+<Layout>
+  <main class="min-h-screen bg-slate-50 py-12 px-4">
+    <div class="max-w-4xl mx-auto">
+      <a href={`/branch/${branch}`} class="text-blue-600 hover:underline mb-8 inline-block">← Back to Semesters</a>
+      
+        <div class="mb-10">
+            <h1 class="text-3xl font-bold text-slate-900 uppercase tracking-tight">
+             {branch} Engineering
+             </h1>
+            <p class="text-slate-500 text-lg">
+             Official Resources for <span class="font-semibold text-blue-600 underline decoration-blue-200">Semester {semNumber}</span>
+            </p>
+        </div>
+
+      <div class="space-y-4">
+        {resources.map((item) => (
+          <div class="p-6 bg-white border border-slate-200 rounded-2xl flex justify-between items-center shadow-sm hover:shadow-md transition-shadow">
+            <div>
+              <span class="text-xs font-bold uppercase tracking-wider text-blue-500 bg-blue-50 px-2 py-1 rounded mb-2 inline-block">
+                {item.type}
+              </span>
+              <h2 class="text-xl font-semibold text-slate-800">{item.title}</h2>
+              <p class="text-slate-400 text-sm">Added in {item.year}</p>
+            </div>
+            <a href={item.file_url} target="_blank" class="bg-slate-900 text-white px-6 py-2 rounded-xl font-medium hover:bg-blue-600 transition-colors">
+                View PDF
+            </a>
+          </div>
+        ))}
+      </div>
+    </div>
+  </main>
+</Layout>
