@@ -34,6 +34,17 @@ if (error) {
              Official Resources for <span class="font-semibold text-blue-600 underline decoration-blue-200">Semester {semNumber}</span>
             </p>
         </div>
+<div class="space-y-4">
+  {resources.length > 0 ? (
+    resources.map((item) => (
+      ))
+  ) : (
+    <div class="text-center py-20 bg-white rounded-2xl border-2 border-dashed border-slate-200">
+      <p class="text-slate-400 text-lg italic">No resources uploaded for this semester yet. Check back soon!</p>
+    </div>
+  )}
+</div>
+
 
       <div class="space-y-4">
         {resources.map((item) => (
