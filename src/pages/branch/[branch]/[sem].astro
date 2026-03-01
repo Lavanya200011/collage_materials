@@ -8,7 +8,7 @@ const { branch, sem } = Astro.params;
 // 3. Clean the semester string (converts "sem-1" to "1")
 const semNumber = sem?.replace('sem-', '');
 
-<<<<<<< HEAD
+ HEAD
 // 4. Filter the JSON data to find matching files
 const filteredResources = resourcesData.filter(item => 
   item.branch.toLowerCase() === branch?.toLowerCase() && 
@@ -50,7 +50,7 @@ const subjects = Object.keys(groupedResources);
     ))
   )}
 </Layout>
-=======
+
 // 1. Fetch data
 const { data: resources, error } = await supabase
   .from('resources')
@@ -140,4 +140,4 @@ const branchName = branch?.toUpperCase();
     </div>
   </main>
 </Layout>
->>>>>>> 7b3c4a78311f97051ff6f0a87d88cb6fcc06c010
+ 7b3c4a78311f97051ff6f0a87d88cb6fcc06c010
