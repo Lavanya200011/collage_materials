@@ -34,32 +34,32 @@ if (error) {
              Official Resources for <span class="font-semibold text-blue-600 underline decoration-blue-200">Semester {semNumber}</span>
             </p>
         </div>
-<div class="space-y-4">
-  {resources.length > 0 ? (
-    resources.map((item) => (
-      ))
-  ) : (
-    <div class="text-center py-20 bg-white rounded-2xl border-2 border-dashed border-slate-200">
-      <p class="text-slate-400 text-lg italic">No resources uploaded for this semester yet. Check back soon!</p>
-    </div>
-  )}
-</div>
-
-
       <div class="space-y-4">
-        {resources.map((item) => (
-          <div class="p-6 bg-white border border-slate-200 rounded-2xl flex justify-between items-center shadow-sm hover:shadow-md transition-shadow">
-            <div>
-              <span class="text-xs font-bold uppercase tracking-wider text-blue-500 bg-blue-50 px-2 py-1 rounded mb-2 inline-block">
-                {item.type}
-              </span>
-              <h2 class="text-xl font-semibold text-slate-800">{item.title}</h2>
-              <p class="text-slate-400 text-sm">Added in {item.year}</p>
+        {resources && resources.length > 0 ? (
+          resources.map((item) => (
+            <div class="p-6 bg-white border border-slate-200 rounded-2xl flex justify-between items-center shadow-sm hover:shadow-md transition-shadow">
+              <div>
+                <span class="text-xs font-bold uppercase tracking-wider text-blue-500 bg-blue-50 px-2 py-1 rounded mb-2 inline-block">
+                  {item.type}
+                </span>
+                <h2 class="text-xl font-semibold text-slate-800">{item.title}</h2>
+                <p class="text-slate-400 text-sm">Added on {new Date(item.created_at).toLocaleDateString()}</p>
+              </div>
+              <a href={item.file_url} target="_blank" class="bg-slate-900 text-white px-6 py-2 rounded-xl font-medium hover:bg-blue-600 transition-colors">
+                  View PDF
+              </a>
             </div>
-            <a href={item.file_url} target="_blank" class="bg-slate-900 text-white px-6 py-2 rounded-xl font-medium hover:bg-blue-600 transition-colors">
-                View PDF
-            </a>
+          ))
+        ) : (
+          <div class="text-center py-20 bg-white rounded-2xl border-2 border-dashed border-slate-200">
+            <p class="text-slate-400 text-lg italic">No resources uploaded for this semester yet. Check back soon!</p>
           </div>
+        )}
+      </div>
+    </div>
+  </main>
+</Layout>
+
         ))}
       </div>
     </div>
