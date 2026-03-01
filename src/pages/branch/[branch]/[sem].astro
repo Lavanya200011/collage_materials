@@ -4,20 +4,22 @@ import Layout from '../../../layouts/Layout.astro';
 import { supabase } from '../../../lib/supabase';
 
 const { branch, sem } = Astro.params;
+
+// 1. Clean the semester string (e.g., "sem-1" becomes "1")
 const semNumber = sem?.replace('sem-', '');
 
-// 🧪 THE HEARTBEAT TEST
-// Let's try to get EVERYTHING from the table first to see if it's working
+// 2. Fetch from Supabase with FILTERS
 const { data: resources, error } = await supabase
   .from('resources')
-  .select('*'); 
+  .select('*')
+  .eq('branch', branch)          // Filter: Branch must match URL (e.g. 'cse')
+  .eq('semester', semNumber);    // Filter: Semester must match URL (e.g. '1')
 
-console.log("--- DEBUG START ---");
-console.log("URL:", import.meta.env.PUBLIC_SUPABASE_URL); // Check if keys are loading
-console.log("Error from Supabase:", error);
-console.log("All Data Found:", resources);
-console.log("--- DEBUG END ---");
+if (error) {
+  console.error("Supabase Error:", error);
+}
 ---
+
 
 <Layout>
   <main class="min-h-screen bg-slate-50 py-12 px-4">
