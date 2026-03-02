@@ -1,7 +1,31 @@
 [
   {
-    "title": "previous year question paper",
-    "subject_name": "economics and management",
+    "title": "Winter2024 question paper",
+    "subject_name": "e&m",
+    "branch": "cse",
+    "semester": "5",
+    "type": "PYQ",
+    "file_url": "https://drive.google.com/file/d/1GW-UG0tXzwKT1uXUemQBDihAuRqSuZMq/view?usp=drive_link"
+  },
+  {
+    "title": "Summer2023 question paper",
+    "subject_name": "e&m",
+    "branch": "cse",
+    "semester": "5",
+    "type": "PYQ",
+    "file_url": "https://drive.google.com/file/d/1k6rt1i2ad-QTubL6d0CUfGKfFSOE9wKo/view?usp=drive_link"
+  },
+  {
+    "title": "Summer2024 question paper",
+    "subject_name": "e&m",
+    "branch": "cse",
+    "semester": "5",
+    "type": "PYQ",
+    "file_url": "https://drive.google.com/file/d/1vR__i-MO1UiDUAbfqQTPmWymWU90D1Yi/view?usp=drive_link"
+  },
+  {
+    "title": "winter2023 question paper",
+    "subject_name": "E&M",
     "branch": "cse",
     "semester": "5",
     "type": "PYQ",
