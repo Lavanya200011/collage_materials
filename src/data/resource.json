@@ -1,6 +1,118 @@
 [
   {
     "title": "winter2023 question paper",
+    "subject_name": "internet of things",
+    "branch": "cse",
+    "semester": "6",
+    "type": "PYQ",
+    "file_url": "https://drive.google.com/file/d/1p6DqO1PjHprmhJ1XBRwvu2rmzJZ7SuRe/view?usp=drive_link"
+  },
+  {
+    "title": "summer2023 question paper",
+    "subject_name": "internet of things",
+    "branch": "cse",
+    "semester": "6",
+    "type": "PYQ",
+    "file_url": "https://drive.google.com/file/d/1z_dmGGc0u-7FX4uV5Euy3z0fYJxXb9MD/view?usp=drive_link"
+  },
+  {
+    "title": "summer(2)2022 question paper",
+    "subject_name": "internet of things",
+    "branch": "cse",
+    "semester": "6",
+    "type": "PYQ",
+    "file_url": "https://drive.google.com/file/d/1j7HvJ5IY9gRMtGB2IS-eyGcoYL5UX8S1/view?usp=drive_link"
+  },
+  {
+    "title": "summer2022 question paper",
+    "subject_name": "internet of things",
+    "branch": "cse",
+    "semester": "6",
+    "type": "PYQ",
+    "file_url": "https://drive.google.com/file/d/1izLTMJf0Uk0Rhr9fWL0lFs-9r7j2vJZr/view?usp=drive_link"
+  },
+  {
+    "title": "winter2022 question paper",
+    "subject_name": "internet of things",
+    "branch": "cse",
+    "semester": "6",
+    "type": "PYQ",
+    "file_url": "https://drive.google.com/file/d/1GhuIZx_HbKASmlXWmewdoVaYTY5NuDY7/view?usp=drive_link"
+  },
+  {
+    "title": "summer2022 question paper",
+    "subject_name": "compiler design",
+    "branch": "cse",
+    "semester": "6",
+    "type": "PYQ",
+    "file_url": "https://drive.google.com/file/d/1PGqLlLfmzSVTADfmC8uHiNajI1xwZgLL/view?usp=drive_link"
+  },
+  {
+    "title": "summer2023 question paper",
+    "subject_name": "compiler design",
+    "branch": "cse",
+    "semester": "6",
+    "type": "PYQ",
+    "file_url": "https://drive.google.com/file/d/1lvIv3iKNkxH5IoqSr3MC55HO6knfRU5W/view?usp=drive_link"
+  },
+  {
+    "title": "winter2023 question paper",
+    "subject_name": "machine learning",
+    "branch": "cse",
+    "semester": "6",
+    "type": "PYQ",
+    "file_url": "https://drive.google.com/file/d/1B_vq1Cd4ZTkEKrjBj82v68l9wVBvoXJu/view?usp=drive_link"
+  },
+  {
+    "title": "winter2023 question paper",
+    "subject_name": "computer network",
+    "branch": "cse",
+    "semester": "6",
+    "type": "PYQ",
+    "file_url": "https://drive.google.com/file/d/1Gtch4QfcVefKX6uJ9qNGFELdWN_TPvR9/view?usp=drive_link"
+  },
+  {
+    "title": "winter2023 question paper",
+    "subject_name": "compiler design",
+    "branch": "cse",
+    "semester": "6",
+    "type": "PYQ",
+    "file_url": "https://drive.google.com/file/d/18dXty5PrUqIR0qvfmoQ3pfPxVZfCIszn/view?usp=drive_link"
+  },
+  {
+    "title": "unit5 notes",
+    "subject_name": "computer network",
+    "branch": "cse",
+    "semester": "6",
+    "type": "NOTES",
+    "file_url": "https://drive.google.com/file/d/1Q_JWoaege8GqvdMDMXLgFbwcaIxRS02X/view?usp=drive_link"
+  },
+  {
+    "title": "unit4 notes",
+    "subject_name": "computer network",
+    "branch": "cse",
+    "semester": "6",
+    "type": "NOTES",
+    "file_url": "https://drive.google.com/file/d/19Kw2NySWbXOEZqiYtM26V9MY4W6FNuyj/view?usp=drive_link"
+  },
+  {
+    "title": "unit3 notes",
+    "subject_name": "computer network",
+    "branch": "cse",
+    "semester": "6",
+    "type": "NOTES",
+    "file_url": "https://drive.google.com/file/d/1kyOvdG8a3CNjncWc5snjw8n6Iu21ePdc/view?usp=drive_link"
+  },
+  {
+    "title": "unit2 notes",
+    "subject_name": "computer network",
+    "branch": "cse",
+    "semester": "6",
+    "type": "NOTES",
+    "file_url": "https://drive.google.com/file/d/1QTbNJyznGpWwXHkd4wRNufiNd-DCBkha/view?usp=drive_link"
+  },
+  {
+    "title": "winter2023 question paper",
     "subject_name": "e&m",
     "branch": "cse",
     "semester": "5",
@@ -30,38 +142,5 @@
     "semester": "5",
     "type": "PYQ",
     "file_url": "https://drive.google.com/file/d/1vR__i-MO1UiDUAbfqQTPmWymWU90D1Yi/view?usp=drive_link"
-  },
-  {
-    "title": "unit 2 notes",
-    "subject_name": "computer network",
-    "branch": "cse",
-    "semester": "6",
-    "type": "notes",
-    "file_url": "https://drive.google.com/file/d/1QTbNJyznGpWwXHkd4wRNufiNd-DCBkha/view?usp=drive_link"
-  },
-  {
-    "title": "unit 3 notes",
-    "subject_name": "computer network",
-    "branch": "cse",
-    "semester": "6",
-    "type": "notes",
-    "file_url": "https://drive.google.com/file/d/1kyOvdG8a3CNjncWc5snjw8n6Iu21ePdc/view?usp=drive_link"
-  },
-  {
-    "title": "unit 4 notes",
-    "subject_name": "computer network",
-    "branch": "cse",
-    "semester": "6",
-    "type": "notes",
-    "file_url": "https://drive.google.com/file/d/19Kw2NySWbXOEZqiYtM26V9MY4W6FNuyj/view?usp=drive_link"
-  },
-  {
-    "title": "unit 5 notes",
-    "subject_name": "computer network",
-    "branch": "cse",
-    "semester": "6",
-    "type": "notes",
-    "file_url": "https://drive.google.com/file/d/1Q_JWoaege8GqvdMDMXLgFbwcaIxRS02X/view?usp=drive_link"
   }
-   
 ]
